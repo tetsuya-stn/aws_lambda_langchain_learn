@@ -1,0 +1,5 @@
+locals {
+  profile = {
+    default = "default"
+  }
+}

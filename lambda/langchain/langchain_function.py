@@ -41,5 +41,6 @@ def handler(event, context):
 
     return {
         'statusCode': 200,
+        'session_id': session_id,
         'body': output
     }

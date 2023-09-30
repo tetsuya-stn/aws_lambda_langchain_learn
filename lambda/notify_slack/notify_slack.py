@@ -14,7 +14,7 @@ def send_slack_notification(event):
     text = {
         "channel": slack_channel,
         "username": "LangChain Bot",
-        "text": event["body"],
+        "text": f"session_id: {event['session_id']}\n\n{event['body']}",
         "icon_emoji": ""
     }
 
